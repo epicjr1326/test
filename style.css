@@ -111,7 +111,7 @@ button:hover {
   display: none;
 }
 .form-slide.active {
-  width: 285px;
+  width: 370px;
   display: block;
   animation: fadeIn 0.5s ease-in;
 }
@@ -131,5 +131,11 @@ button:hover {
   h2 {
     margin-top: 40px;
     font-size: 1.2rem;
+  }
+
+  .from-slide.active {
+    width: 285px;
+    display: block;
+    animation: fadeeIn 0.5s ease-in;
   }
 }
