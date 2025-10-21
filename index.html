@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta Expo Homeschool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <img src="assets/beebo logo.jpg" alt="Beebo Logo" width="500" />
+
+      <form id="expectForm">
+    <h2>✨ Expo Homeschool - Expectativas</h2>
+    
+    <fieldset class="form-slide active">
+        <h3>Sobre ti</h3>
+        <label>Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label>Edad:</label>
+        <input type="number" id="edad" required>
+
+        <label>Telefono</label>
+        <input type="number" id="telefono" required>
+
+        <label>Email:</label>
+        <input type="text" id="email" required>
+        
+        <div class="navigation">
+        <button type="button" id="next1">Siguiente</button>
+      </div>
+        </fieldset>
+
+        <!-- Paso 2 -->
+        <fieldset class="form-slide">
+          <h3>Tus expectativas</h3>
+        <label>¿Qué esperas del evento?</label>
+        <textarea id="expectativas" rows="3" placeholder="Aprender, divertirme, conocer personas..." required></textarea>
+
+        <label>¿Qué te emociona más?</label>
+        <select id="emocion" required>
+            <option value="">Selecciona</option>
+            <option value="spelling">El Torneo de Spelling Bee 🐝</option>
+            <option value="ciencia">La Feria de Ciencias 🔬</option>
+            <option value="ambos">¡Ambos eventos!</option>
+        </select>
+
+          <div class="navigation">
+            <button type="button" id="prev1">Anterior</button>
+            <button type="button" id="next2">Siguiente</button>
+          </div>
+        </fieldset>
+
+        <!-- Paso 3 -->
+        <fieldset class="form-slide">
+          <h3>Tu conexión con la Expo</h3>
+        <label>¿Vienes como estudiante, padre o visitante?</label>
+        <select id="rol" required>
+            <option value="">Selecciona</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="padre">Padre o Madre</option>
+            <option value="visitante">Visitante</option>
+        </select>
+
+        <label>¿Qué te gustaría ver o aprender hoy?</label>
+        <textarea id="interes" rows="3" placeholder="Ej: experimentos, presentaciones, juegos, talleres..." required></textarea>
+          <div class="navigation">
+            <button type="button" id="prev2">Anterior</button>
+            <button type="submit" id="submitBtn">Enviar</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <p id="form-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
