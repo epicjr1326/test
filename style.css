@@ -116,7 +116,7 @@ button:hover {
   animation: fadeIn 0.5s ease-in;
 }
 
-/* 📱 Responsive */
+/* 📱 Responsive (mobile) */
 @media (max-width: 600px) {
   .form-container {
     padding: 25px 20px;
@@ -133,9 +133,18 @@ button:hover {
     font-size: 1.2rem;
   }
 
-  .from-slide.active {
+  /* 👇 Fixed typo: was .from-slide, should be .form-slide */
+  .form-slide.active {
     width: 285px;
     display: block;
-    animation: fadeeIn 0.5s ease-in;
+    animation: fadeIn 0.5s ease-in; /* also fixed typo: fadeeIn → fadeIn */
   }
 }
+
+/* 💻 For PC (larger screens) */
+@media (min-width: 601px) {
+  .form-slide.active {
+    width: 370px;
+  }
+}
+
