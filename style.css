@@ -111,7 +111,7 @@ button:hover {
   display: none;
 }
 .form-slide.active {
-  width: 235px;
+  width: 250px;
   display: block;
   animation: fadeIn 0.5s ease-in;
 }
